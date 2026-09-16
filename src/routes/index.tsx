@@ -24,12 +24,12 @@ function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <main className="overflow-hidden bg-background text-foreground">
+    <main className="premium-grain overflow-hidden bg-background text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-foreground/10 bg-background/70 backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
           <a href="#top" className="flex items-center gap-3" aria-label="Ironvault home">
             <span className="grid size-9 place-items-center bg-primary text-primary-foreground"><Dumbbell size={19} /></span>
-            <span className="font-display text-xl uppercase">Iron<span className="text-primary">vault</span></span>
+            <span><span className="block font-display text-xl uppercase leading-none">Iron<span className="text-primary">vault</span></span><span className="mt-1 hidden text-[7px] font-semibold uppercase tracking-[0.28em] text-muted-foreground lg:block">Strength club</span></span>
           </a>
           <nav className="hidden items-center gap-8 text-xs font-bold uppercase tracking-[0.14em] md:flex" aria-label="Main navigation">
             <a className="nav-link" href="#about">The club</a><a className="nav-link" href="#training">Training</a><a className="nav-link" href="#membership">Membership</a><a className="nav-link" href="#contact">Contact</a>
@@ -45,7 +45,7 @@ function Index() {
         <div className="hero-shade absolute inset-0" />
         <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-5 pb-16 lg:grid-cols-[1fr_300px] lg:px-8 lg:pb-20">
           <div className="animate-lift-in max-w-4xl">
-            <div className="mb-6 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-primary"><span className="h-px w-10 bg-primary" />Built for the work</div>
+            <div className="mb-6 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-primary"><span className="h-px w-10 bg-primary" />Est. 2018 &nbsp;·&nbsp; Built for the work</div>
             <h1 className="font-display text-[clamp(4rem,11vw,9.5rem)] leading-[0.77] uppercase">Earn your<br/><span className="text-stroke">strength.</span></h1>
             <p className="mt-8 max-w-xl text-base leading-7 text-muted-foreground md:text-lg">No shortcuts. No crowded floors. Just elite equipment, focused coaching, and a room built for measurable progress.</p>
             <div className="mt-8 flex flex-wrap gap-3"><Button variant="gym" size="lg" asChild><a href="#membership">Start training <ArrowRight /></a></Button><Button variant="glass" size="lg" asChild><a href="#about">Explore the club</a></Button></div>
